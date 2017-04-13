@@ -204,8 +204,8 @@ public class Jpad extends Application
      {
         FileChooser fc = new FileChooser(); 
         
-         FileChooser.ExtensionFilter filter = new ExtensionFilter("JPad files", "*.jpad"); 
-         fc.getExtensionFilters().addAll(filter);
+         FileChooser.ExtensionFilter filter = new FileChooser.ExtensionFilter("JPad files (*.jpad)", "*.jpad"); 
+         fc.getExtensionFilters().add(filter);
          
          File file = fc.showOpenDialog(stage);
          
@@ -228,7 +228,7 @@ public class Jpad extends Application
      {
          FileChooser fc = new FileChooser(); 
         
-         FileChooser.ExtensionFilter filter = new ExtensionFilter("JPad files","*.jpad"); 
+         FileChooser.ExtensionFilter filter = new FileChooser.ExtensionFilter("JPad files (*.jpad)", "*.jpad"); 
                  
          fc.getExtensionFilters().add(filter);
           
